@@ -1,0 +1,106 @@
+html,
+body {
+  height: 100%;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans.ttf") format("truetype");
+  font-weight: 100 900; /* Range of weights available */
+  font-style: normal;
+}
+
+body {
+  font-family:
+    "DMSans",
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+
+.container {
+  text-align: center;
+  padding: 16px;
+  max-width: 576px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  width: 100px;
+  height: 100px;
+  margin: 32px auto 8px auto;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+nav {
+  margin: 24px 0;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.text {
+  text-align: center;
+}
+
+.links {
+  padding: 0;
+  list-style: none;
+}
+
+.links li {
+  margin-bottom: 16px;
+}
+
+.links a {
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 24px 4px;
+  border-radius: 8px;
+  text-decoration: none;
+
+  hyphens: auto;
+  white-space: normal;
+  background: none;
+  color: inherit;
+  transition:
+    box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+    border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+    transform 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
+    background-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  padding-left: 44px;
+  padding-right: 44px;
+
+  background-color: rgb(88, 76, 58);
+  border: 1px solid rgb(88, 76, 58);
+  color: rgb(250, 244, 236);
+}
+
+.links a:hover {
+  background-color: transparent;
+  color: rgb(88, 76, 58);
+  border: 1px solid rgb(88, 76, 58);
+}
