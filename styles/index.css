@@ -1,3 +1,31 @@
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Light theme */
+    --background: #dedede;
+    --color: #0b0b0b;
+    --link-color: black;
+    --link-background: #fdf6f6;
+    --link-border-color: #fdf6f6;
+    --link-hover-color: #505050;
+    --link-hover-border: #fdf6f6;
+    --link-hover-background: transparent;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Dark theme */
+    --background: black;
+    --color: white;
+    --link-color: rgb(250, 244, 236);
+    --link-background: rgb(88, 76, 58);
+    --link-border-color: rgb(88, 76, 58);
+    --link-hover-color: #969696;
+    --link-hover-border: rgb(88, 76, 58);
+    --link-hover-background: transparent;
+  }
+}
+
 html,
 body {
   height: 100%;
@@ -25,8 +53,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   width: 100%;
-  background: black;
-  color: white;
+  background: var(--background);
+  color: var(--color);
 }
 
 .title {
@@ -73,7 +101,6 @@ nav {
 }
 
 .links a {
-  color: white;
   display: inline-block;
   width: 100%;
   padding: 22px 4px;
@@ -83,7 +110,6 @@ nav {
   hyphens: auto;
   white-space: normal;
   background: none;
-  color: inherit;
   transition:
     box-shadow 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
     border-color 0.25s cubic-bezier(0.08, 0.59, 0.29, 0.99) 0s,
@@ -94,13 +120,14 @@ nav {
   padding-left: 44px;
   padding-right: 44px;
 
-  background-color: rgb(88, 76, 58);
-  border: 1px solid rgb(88, 76, 58);
-  color: rgb(250, 244, 236);
+  background-color: var(--link-background);
+  border: 2px solid var(--link-border-color);
+  color: var(--link-color);
 }
 
 .links a:hover {
-  background-color: transparent;
-  color: rgb(88, 76, 58);
-  border: 1px solid rgb(88, 76, 58);
+  background-color: var(--link-hover-background);
+  color: var(--link-hover-color);
+  border: 2px solid var(--link-hover-border);
+  scale: 1.03;
 }
