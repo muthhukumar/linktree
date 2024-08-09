@@ -37,14 +37,14 @@ body {
 .container {
   text-align: center;
   padding: 16px;
-  max-width: 576px;
+  max-width: 610px;
   margin: 0 auto;
 }
 
 .logo-container {
   width: 100px;
   height: 100px;
-  margin: 32px auto 8px auto;
+  margin: 46px auto 8px auto;
   border-radius: 9999px;
   overflow: hidden;
 }
@@ -76,7 +76,7 @@ nav {
   color: white;
   display: inline-block;
   width: 100%;
-  padding: 24px 4px;
+  padding: 22px 4px;
   border-radius: 8px;
   text-decoration: none;
 
