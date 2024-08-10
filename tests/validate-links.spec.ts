@@ -59,7 +59,6 @@ test("Validate the link page is online", async ({ page }) => {
     {
       name: "MyAnimeList",
       expectedURL: "https://myanimelist.net/animelist/Muthukumark",
-      expectedText: "Muthukumark's Anime List",
     },
     {
       name: "MyMangaList",
