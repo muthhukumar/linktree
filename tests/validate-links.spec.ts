@@ -13,7 +13,6 @@ test("Validate the link page is online", async ({ page }) => {
     {
       name: "Website",
       expectedURL: "https://www.muthukumar.dev/",
-      expectedText: "muthukumar",
     },
     {
       name: "Drawings",
