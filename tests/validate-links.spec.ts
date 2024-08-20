@@ -48,7 +48,7 @@ test("Validate the link page is online", async ({ page }) => {
     },
     {
       name: "Leetcode",
-      expectedURL: "https://leetcode.com/u/awesomemuthu28/",
+      expectedURL: "https://leetcode.com/u/muthu_dev",
       expectedText: "Muthu kumar",
     },
     {
